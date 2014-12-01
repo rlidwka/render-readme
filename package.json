@@ -1,0 +1,19 @@
+{
+  "name"          : "render-readme",
+  "version"       : "0.1.0",
+  "description"   : "render and sanitize readme.md just like github would",
+
+  "author"        : { "name"  : "Alex Kocharin",
+                      "email" : "alex@kocharin.ru" },
+
+  "repository"    : { "type"  : "git",
+                      "url"   : "git://github.com/rlidwka/render-readme" },
+
+  "dependencies"  : { "remarkable"    : "1.x >=1.4",
+                      "sanitize-html" : "1.x >=1.4",
+                      "highlight.js"  : "8.x" },
+  
+  "publishConfig" : { "registry" : "https://registry.npmjs.org/" },
+
+  "license"       : "MIT"
+}
