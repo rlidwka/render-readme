@@ -25,3 +25,8 @@ assert.equal(parse('<a class="evil" href="blah">foo</a>'),
 // highlighter
 assert.equal(parse('```js\nvar foo = "bar";\n```'),
                    '<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">"bar"</span>;\n</code></pre>\n')
+
+// metadata
+assert.equal(parse('---\naaa: 123\nbbb: "*456*"\n---\n\n*foo*\n'),
+                   '<table>\n<thead>\n</thead><td>aaa</td><td>bbb</td>\n<tbody>\n<td>123</td><td>*456*</td></tbody>\n</table>\n<p><em>foo</em></p>\n')
+

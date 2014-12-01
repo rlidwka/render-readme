@@ -9,9 +9,10 @@
   "repository"    : { "type"  : "git",
                       "url"   : "git://github.com/rlidwka/render-readme" },
 
-  "dependencies"  : { "remarkable"    : "1.x >=1.4",
-                      "sanitize-html" : "1.x >=1.4",
-                      "highlight.js"  : "8.x" },
+  "dependencies"  : { "remarkable"      : "1.x >=1.4",
+                      "sanitize-html"   : "1.x >=1.4",
+                      "js-yaml"         : "3.x >=3.2",
+                      "highlight.js"    : "8.x" },
   
   "publishConfig" : { "registry" : "https://registry.npmjs.org/" },
 
