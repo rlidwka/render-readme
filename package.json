@@ -1,6 +1,6 @@
 {
   "name"          : "render-readme",
-  "version"       : "0.2.1",
+  "version"       : "0.2.2",
   "description"   : "render and sanitize readme.md just like github would",
 
   "author"        : { "name"  : "Alex Kocharin",
@@ -9,7 +9,7 @@
   "repository"    : { "type"  : "git",
                       "url"   : "git://github.com/rlidwka/render-readme" },
 
-  "dependencies"  : { "remarkable"      : "1.x >=1.4",
+  "dependencies"  : { "remarkable"      : "1.x >=1.5",
                       "sanitize-html"   : "1.x >=1.4",
                       "js-yaml"         : "3.x >=3.2",
                       "highlight.js"    : "8.x" },
