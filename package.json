@@ -1,6 +1,6 @@
 {
   "name"          : "render-readme",
-  "version"       : "0.2.3",
+  "version"       : "1.0.0",
   "description"   : "render and sanitize readme.md just like github would",
 
   "author"        : { "name"  : "Alex Kocharin",
