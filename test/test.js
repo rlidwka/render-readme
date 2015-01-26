@@ -24,7 +24,7 @@ assert.equal(parse('<a class="evil" href="blah">foo</a>'),
 
 // highlighter
 assert.equal(parse('```js\nvar foo = "bar";\n```'),
-                   '<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">"bar"</span>;\n</code></pre>\n')
+                   '<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">&quot;bar&quot;</span>;\n</code></pre>\n')
 
 assert.equal(parse('```sh\n$ test\n```'),
                    '<pre><code class="lang-sh">$ <span class="hljs-built_in">test</span>\n</code></pre>\n')
