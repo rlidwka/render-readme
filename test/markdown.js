@@ -7,7 +7,7 @@ assert.equal(parse('> x'),
 assert.equal(parse('    q'),
                    '<pre><code>q</code></pre>\n')
 assert.equal(parse('```foo\nxxx\n```'),
-                   '<pre><code class=\"lang-foo\"><span class=\"hljs-title\">xxx</span>\n</code></pre>\n')
+                   '<pre><code class=\"lang-foo\">xxx\n</code></pre>\n')
 assert.equal(parse('# foo'),
                    '<h1><a name=\"foo\"></a>foo</h1>\n')
 assert.equal(parse('bar\n----\n'),

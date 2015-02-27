@@ -29,6 +29,9 @@ assert.equal(parse('```js\nvar foo = "bar";\n```'),
 assert.equal(parse('```sh\n$ test\n```'),
                    '<pre><code class="lang-sh">$ <span class="hljs-built_in">test</span>\n</code></pre>\n')
 
+assert.equal(parse('```\n-----\n```'),
+                   '<pre><code>-----\n</code></pre>\n')
+
 // metadata
 assert.equal(parse('---\naaa: 123\nbbb: "*456*"\n---\n\n*foo*\n'),
                    '<table>\n<thead>\n</thead><td>aaa</td><td>bbb</td>\n<tbody>\n<td>123</td><td>*456*</td></tbody>\n</table>\n<p><em>foo</em></p>\n')
