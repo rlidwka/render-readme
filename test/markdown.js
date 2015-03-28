@@ -21,7 +21,7 @@ assert.equal(parse('- 1\n   - 2'),
 assert.equal(parse('[zzz]\n\n[zzz]: 123'),
                    '<p><a href=\"123\">zzz</a></p>\n')
 assert.equal(parse('| a | b |\n|---|---|\n| c | d |\n'),
-                   '<table>\n<thead>\n<tr><th>a</th><th>b</th></tr>\n</thead>\n<tbody>\n<tr><td>c</td><td>d</td></tr>\n</tbody>\n</table>\n')
+                   '<table>\n<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table>\n')
 
 // inline
 assert.equal(parse('<foo@bar.com>'),

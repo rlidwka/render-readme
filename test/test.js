@@ -34,5 +34,5 @@ assert.equal(parse('```\n-----\n```'),
 
 // metadata
 assert.equal(parse('---\naaa: 123\nbbb: "*456*"\n---\n\n*foo*\n'),
-                   '<table>\n<thead>\n</thead><td>aaa</td><td>bbb</td>\n<tbody>\n<td>123</td><td>*456*</td></tbody>\n</table>\n<p><em>foo</em></p>\n')
+                   '<table>\n<thead>\n<th>\naaa</th>\n<th>\nbbb</th>\n</thead>\n<tbody>\n<td>\n123</td>\n<td>\n*456*</td>\n</tbody>\n</table>\n<p><em>foo</em></p>\n')
 
