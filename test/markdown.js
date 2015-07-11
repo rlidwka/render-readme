@@ -46,3 +46,7 @@ assert.equal(parse('![test](foo)'),
 // core
 assert.equal(parse('```\n\0foo\r\n\nbar\nx\tbaz\n'),
                    '<pre><code>�foo\n\nbar\nx   baz\n</code></pre>\n')
+
+// this shouldn't fail:
+assert.equal(parse('```!@#$%^&*"\nxxx\n```'),
+                   '<pre><code class=\"lang-!@#$%^&amp;*&quot;\">xxx\n</code></pre>\n')
